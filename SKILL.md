@@ -4,7 +4,7 @@ description: "Use when building full-stack applications requiring frontend, back
 license: MIT
 metadata:
   author: "Trae AI"
-  version: "2.5.0"
+  version: "2.6.0"
   triggers: "Vue, React, Next.js, Node.js, API, database, Docker, Kubernetes, security, Agent, testing, CI/CD, authentication, ML, RAG, Python, TypeScript, Go, Rust"
   role: specialist
   scope: implementation

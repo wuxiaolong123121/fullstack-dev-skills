@@ -1,7 +1,6 @@
 # FullStack Development Skills
 
-> 全栈开发专家技能集 - 84 个技能， 15 个分类
- 9 个工作流
+> 全栈开发专家技能集 - 84 个技能， 15 个分类， 9 个工作流
 
 ## 项目简介
 
@@ -13,6 +12,7 @@
 - **15 个分类** - 语言、框架、基础设施、API、质量、DevOps、安全、数据、平台、专业领域、工具、工作流、AI Agent、自我完善
 - **9 个工作流** - 需求分析、架构设计、实现开发、测试验证、部署运维
 - **自我完善能力** - 自动检测缺失、评估质量、生成改进建议
+- **跨 IDE 支持** - 支持 Cursor、Windsurf、VS Code + Copilot、Claude Desktop
 
 ## 技能分类
 
@@ -76,7 +76,35 @@ Skill Audit, Quality Evaluation, Improvement Suggestions, GitHub Sync
 git clone https://github.com/wuxiaolong123121/fullstack-dev-skills.git
 ```
 
-2. 在 Trae IDE 中使用:
+### 跨 IDE 使用
+
+本技能集支持多种 IDE，只需将对应的规则文件复制到项目根目录：
+
+| IDE | 规则文件 | 使用方法 |
+|-----|---------|---------|
+| **Cursor** | `.cursorrules` | 复制到项目根目录，自动生效 |
+| **Windsurf** | `.windsurfrules` | 复制到项目根目录，自动生效 |
+| **VS Code + Copilot** | `.github/copilot-instructions.md` | 复制到项目 `.github/` 目录 |
+| **Claude Desktop** | `.clauderules` | 复制到项目根目录 |
+| **Trae IDE** | `SKILL.md` | 放置在 `.trae/skills/fullstack-dev-skills/` 目录 |
+
+### 自动转换
+
+运行转换脚本自动生成各 IDE 规则文件：
+
+```bash
+# 生成所有 IDE 规则文件
+node convert.js
+
+# 生成指定 IDE 规则文件
+node convert.js cursor
+node convert.js windsurf
+node convert.js copilot
+node convert.js claude
+```
+
+### 在 Trae IDE 中使用
+
 将技能目录放置在 `.trae/skills/fullstack-dev-skills/` 目录下。
 
 ### 使用方法
@@ -110,6 +138,7 @@ print(workflow.generate_report(results))
 
 | 版本 | 日期 | 变更 |
 |-----|------|------|
+| 2.6.0 | 2025-03 | 新增跨 IDE 支持（Cursor、Windsurf、VS Code + Copilot、Claude Desktop） |
 | 2.5.0 | 2025-03 | 新增技能自我完善模式 |
 | 2.4.0 | 2025-03 | 新增 5 个 FastCode 高级模式 |
 | 2.3.0 | 2025-03 | 集成 FastCode 代码理解框架 |
