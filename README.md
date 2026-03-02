@@ -87,6 +87,7 @@ git clone https://github.com/wuxiaolong123121/fullstack-dev-skills.git
 | **VS Code + Copilot** | `.github/copilot-instructions.md` | 复制到项目 `.github/` 目录 |
 | **Claude Desktop** | `.clauderules` | 复制到项目根目录 |
 | **Kiro** | `spec.md` | 复制到项目根目录，使用 Spec 模式 |
+| **Antigravity** | `SKILL.md` | 复制到 `.trae/skills/fullstack-dev-skills/` 目录 |
 | **Trae IDE** | `SKILL.md` | 放置在 `.trae/skills/fullstack-dev-skills/` 目录 |
 
 ### 自动转换
