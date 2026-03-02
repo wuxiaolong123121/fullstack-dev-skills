@@ -1,0 +1,69 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build
+dist/
+build/
+*.tsbuildinfo
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Test
+coverage/
+.nyc_output/
+
+# Cache
+.cache/
+.parcel-cache/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+*.so
+
+# Virtual Environment
+venv/
+.venv/
+ENV/
+
+# Temporary
+*.tmp
+*.temp
+.temp/
+.tmp/
+
+# Backup
+*.bak
+*.backup
+
+# Compressed
+*.zip
+*.tar.gz
+*.rar
+
+# Package Lock
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
